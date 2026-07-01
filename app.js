@@ -10,10 +10,10 @@ console.log(cards);
 // 4. Variables for user's first choice, second choice, and time
 let firstChoice = null;
 let secondChoice = null;
-let time = 60;
+let time = 15;
 let matchs = 0;
 let timer;
-let lockBoard = false;
+let lockBoard = true;
 
 // 6. Cache start button
 const startButton = document.querySelector("#start-btn");
@@ -26,34 +26,22 @@ console.log(startButton);
 
 
 // 7. Timer goes down by 1 second using setInterval
-function handleStart(){
-
+function handleStart() {
+    lockBoard = false;
     console.log("Game Started");
-
     message.textContent = "";
-
-    timer = setInterval(function(){
-
+    timer = setInterval(function () {
         time--;
-
         timeDisplay.textContent = time;
-
-        console.log("Time:",time);
-
-
-        if(time === 0){
-
+        console.log("Time:", time);
+        if (time === 0) {
             clearInterval(timer);
-
-            lockBoard = true;
-
+            timeDisplay.textContent = 0;
             message.textContent = "❌ Game Over! Try Again";
-
             console.log("Lose!");
-
         }
-
-    },1000);
+    }, 1000);
+    shuffleCards()
 }
 
 startButton.addEventListener("click",handleStart);
@@ -95,7 +83,7 @@ cards.forEach(function(card,index){
 // 9 + 11 + 12. Handle card clicks
 function handleClick(event){
 
-    if(lockBoard) return;
+    if(lockBoard === true) return;
 
 
     console.log("Card clicked");
@@ -215,7 +203,7 @@ function restartGame(){
     clearInterval(timer);
 
 
-    time = 60;
+    time = 15;
 
     matchs = 0;
 
