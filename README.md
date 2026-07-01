@@ -26,7 +26,7 @@ Memory Card Game is a fun and interactive game where players flip over cards to 
 
 ## Screenshots
 
-![alt text](image.png)
+![alt text](image-1.png)
 
 ---
 

@@ -154,6 +154,8 @@ function checkMatch(){
 
             message.textContent = "🏆 You Won the Champions League!";
 
+            message.style.display = "block"
+
             console.log("Winner!");
 
         }

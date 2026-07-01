@@ -62,7 +62,7 @@ h1{
 
     height:140px;
 
-    object-fit:cover;
+    object-fit:fill;
 
     border-radius:15px;
 
@@ -189,4 +189,14 @@ button{
 
     transform:scale(1.05);
 
+}
+
+#scoreContainer{
+    display: flex;
+    justify-content: space-between;
+    width:50vw
+}
+
+#message{
+    display:none
 }
