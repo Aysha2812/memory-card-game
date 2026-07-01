@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Memory Card Game</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script defer src="app.js"></script>
+
+</head>
+
+<body>
+
+<h1>Memory Card Game</h1>
+
+
+<!-- Game Board -->
+
+<div class="game-board">
+
+<img class="front" data-index="0" src="./Card.png" alt="Card Back">
+<img class="front" data-index="1" src="./Card.png" alt="Card Back">
+<img class="front" data-index="2" src="./Card.png" alt="Card Back">
+<img class="front" data-index="3" src="./Card.png" alt="Card Back">
+
+<img class="front" data-index="4" src="./Card.png" alt="Card Back">
+<img class="front" data-index="5" src="./Card.png" alt="Card Back">
+<img class="front" data-index="6" src="./Card.png" alt="Card Back">
+<img class="front" data-index="7" src="./Card.png" alt="Card Back">
+
+</div>
+
+
+<h2>Time: <span id="time">60</span></h2>
+
+<h2>Score: <span id="score">0</span></h2>
+
+
+<!-- Win / Lose message -->
+
+<h2 id="message"></h2>
+
+
+<button id="start-btn">
+Start Game
+</button>
+
+
+<button id="restart-btn">
+Restart Game
+</button>
+
+
+</body>
+
+</html>
