@@ -42,4 +42,4 @@ Memory Card Game is a fun and interactive game where players flip over cards to 
 
 ## Credits
 
-**Omar & Zaid**
+**Omar & Zaid & Israa**
